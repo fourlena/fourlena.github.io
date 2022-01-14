@@ -1,0 +1,405 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #fff;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body{
+    background-color:var(--color-black);
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Heder */
+.header-container {
+    display: flex;
+    padding-top: 20px;
+    background: url('assets/img/bg/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.logo{
+    cursor: pointer
+}
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
+.nav{
+    margin-left: auto;
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 13px;
+    list-style: none;
+}
+.nav-link {
+    padding: 0 15px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: var(--color-gold);
+}
+.language{
+    display: flex;
+    align-items: center;
+}
+.language-link{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-white);
+    text-decoration: none;
+    padding-left: 4px;
+    cursor: pointer
+}
+.language-link:hover{
+    color: var(--color-gold); 
+}
+.language span{
+    transform: translateY(1px) rotate(-75deg);
+    display: block;
+    height: 2px;
+    width: 18px;
+    background-color: var(--color-white);
+    margin-left: 4px;
+}
+
+.hero{
+    min-height: 839px;
+    background-image: url('assets/img/bg/header-bg.jpg');
+    background-position: center -68px;
+    background-repeat: no-repeat;
+}
+
+.hero-wrapper{
+    padding-top: 166px;
+    padding-left: 61px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-title{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 64px;
+    color: var(--color-white);
+}
+.hero-text{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    width: 470px;
+    color: var(--color-white);
+}
+.hero-btn{
+    margin-top: 24px;
+}
+.btn-gold{
+    background: var(--color-gold);
+    border: 0px;
+    height: 55px;
+    width: 220px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.btn-gold:hover{
+    color: var(--color-white);
+}
+
+.section-title{ 
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+}
+.section-title h2{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--color-gold);
+}
+.section-title::before,
+.section-title::after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 273px;
+    height: 4px;
+    background-color: var(--color-gold);
+    position: relative;
+}
+.section-title::before{
+    margin-left: -100%;
+    left: -14px;
+}
+.section-title::after{
+    margin-right: -100%;
+    right: -14px;
+}
+
+.skills{
+    min-height: 482px;
+    background-color:var(--color-black);
+    padding-top: 101px;
+}
+.skill-items{
+    padding: 60px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skill-item{
+    max-width: 284px;
+}
+.skill-icon{
+    display: block;
+    margin: 0 auto;
+}
+.skill-title{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--color-white);
+}
+.skill-subtitle{
+    margin-top: 19px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.portfolio{
+    padding-top: 100px;
+}
+.btn-wrapper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.btn-transparent{
+    background: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    height: 55px;
+    width: 220px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.btn-transparent:hover{
+    color: var(--color-white);
+}
+.picture-wrapper{
+    margin-top: 61px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.video{
+    padding-top: 100px;
+}
+.video-wrapper{
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-btn{
+    position: absolute;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.video-btn:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
+
+.price{
+    padding-top: 100px;
+}
+.price-items{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.price-item{
+    border: 3px solid var(--color-gold);
+    width: 450px;
+    height: 505px;
+}
+.price-item span{
+    /* margin-top: 19px; */
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--color-white);
+}
+.price-title{
+    margin-top: 40px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 56px;
+    text-align: center;
+    color: var(--color-white);
+}
+.price-prices{
+    margin: 20px 0;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: center;
+    color: var(--color-gold);
+}
+.price-btn{
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.contacts{
+    margin-top: 100px;
+    min-height: 700px;
+    background: url('assets/img/bg/contacts-bg.jpg');
+    background-size: auto 700px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.contact-wrapper{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contact-title{
+    padding-right: 224px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    color: var(--color-gold);
+}
+.contact-form{
+    width: 450px;
+    margin-top: 40px;
+}
+.contact-form input{
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-gold);
+    margin-bottom: 20px;
+    padding: 5px 20px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    font-family: inherit;
+    color: var(--color-gold);
+    font-size: 20px;
+}
+.contact-form textarea{
+    height: 100px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-gold);
+    font-family: inherit;
+    color: var(--color-gold);
+    font-size: 20px;
+    resize: none;
+    padding: 12px 20px;
+}
+.contact-btn{
+    margin-top: 27px;
+}
+
+.footer{
+    min-height: 100px;
+}
+.footer-wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-github{
+    gap: 20px;
+    display: flex;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: var(--color-white);
+}
+.footer-github a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+.footer-github a:hover{
+    color: var(--color-gold);
+}
+.footer-rss{
+    padding-left: 17px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+.footer-rss:hover{
+    color: var(--color-gold);
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.footer-social-link:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
