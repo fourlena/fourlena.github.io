@@ -21,20 +21,20 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <img class="logo" src="assets/svg/logo.svg" alt="logo">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#video" class="nav-link">Video</a></li>
-                    <li class="nav-item"><a href="#price" class="nav-link">Price</a></li>
-                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <img class="header-logo" src="assets/svg/logo.svg" alt="logo">
+            <nav class="header-menu">
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-item-link" href="#skills">Skills</a></li>
+                    <li class="header-item"><a class="header-item-link" href="#portfolio">Portfolio</a></li>
+                    <li class="header-item"><a class="header-item-link" href="#video">Video</a></li>
+                    <li class="header-item"><a class="header-item-link" href="#price">Price</a></li>
+                    <li class="header-item"><a class="header-item-link" href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
-            <div class="language">
-                <a class="language-link" href="#">en</a>
+            <div class="header-language">
+                <a class="header-language-link" href="#">en</a>
                 <span> </span>
-                <a class="language-link" href="#">ru</a>
+                <a class="header-language-link" href="#">ru</a>
             </div>
         </div>
     </header>
@@ -57,22 +57,22 @@
                     </div>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <img src="assets/svg/skills/camera.svg" alt="camera" class="skill-icon">
+                            <img class="skill-icon" src="assets/svg/skills/camera.svg" alt="camera">
                             <div class="skill-title">Digital photography</div>
                             <div class="skill-subtitle">High-quality photos in the studio and on the nature</div>
                         </div>
                         <div class="skill-item">
-                            <img src="assets/svg/skills/video.svg" alt="video" class="skill-icon">
+                            <img class="skill-icon" src="assets/svg/skills/video.svg" alt="video">
                             <div class="skill-title">Video shooting</div>
                             <div class="skill-subtitle">Capture your moments so that they always stay with you</div>
                         </div>
                         <div class="skill-item">
-                            <img src="assets/svg/skills/image.svg" alt="image" class="skill-icon">
+                            <img class="skill-icon" src="assets/svg/skills/image.svg" alt="image">
                             <div class="skill-title">Retouch</div>
                             <div class="skill-subtitle">I strive to make photography surpass reality</div>
                         </div>
                         <div class="skill-item">
-                            <img src="assets/svg/skills/mic.svg" alt="mic" class="skill-icon">
+                            <img class="skill-icon" src="assets/svg/skills/mic.svg" alt="mic">
                             <div class="skill-title">Audio</div>
                             <div class="skill-subtitle">Professional sounds recording for video, advertising, portfolio</div>
                         </div>
@@ -84,13 +84,13 @@
                     <div class="section-title">
                         <h2>Portfolio</h2>
                     </div>
-                    <div class="btn-wrapper">
+                    <div class="portfolio-buttons">
                         <button class="btn-transparent">Winter</button>
                         <button class="btn-transparent">Spring</button>
                         <button class="btn-transparent">Summer</button>
                         <button class="btn-gold">Autumn</button>
                     </div>
-                    <div class="picture-wrapper">
+                    <div class="portfolio-picture">
                         <img src="assets/img/portfolio/portfolio-img-1.jpg" alt="1">
                         <img src="assets/img/portfolio/portfolio-img-2.jpg" alt="2">
                         <img src="assets/img/portfolio/portfolio-img-3.jpg" alt="3">
@@ -106,7 +106,7 @@
                         <h2>Video</h2>
                     </div>
                     <div class="video-wrapper">
-                        <img src="assets/img/video-player.jpg" alt="video-player" class="video-img">
+                        <img class="video-img" src="assets/img/video-player.jpg" alt="video-player">
                         <button class="video-btn"><img src="assets/svg/play.svg" alt="Кнопка «button»"></button>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                             <span>12 photos in retouch</span>
                             <span>Readiness 2-3 weeks</span>
                             <span>Make up, visage</span>
-                            <button class="btn-gold price-btn">Order shooting</button>
+                            <button class="price-btn btn-gold">Order shooting</button>
                         </div>
                         <div class="price-item">
                             <div class="price-title">Premium</div>
@@ -135,7 +135,7 @@
                             <span>20 photos in retouch</span>
                             <span>Readiness 1-2 weeks</span>
                             <span>Make up, visage</span>
-                            <button class="btn-gold price-btn">Order shooting</button>
+                            <button class="price-btn btn-gold">Order shooting</button>
                         </div>
                         <div class="price-item">
                             <div class="price-title">Gold</div>
@@ -145,20 +145,20 @@
                             <span>50 photos in retouch</span>
                             <span>Readiness 1 week</span>
                             <span>Make up, visage, hairstyle</span>
-                            <button class="btn-gold price-btn">Order shooting</button>
+                            <button class="price-btn btn-gold">Order shooting</button>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="contacts" id="contacts">
                 <div class="container">
-                    <div class="contact-wrapper">
-                        <h2 class="contact-title">Contact me</h2>
-                        <form action="" class="contact-form">
+                    <div class="contacts-wrapper">
+                        <h2 class="contacts-title">Contact me</h2>
+                        <form class="contacts-form">
                             <input type="email" placeholder="E-mail">
                             <input type="tel" placeholder="Phone">
                             <textarea  placeholder="Message" cols="30" rows="10"></textarea>
-                            <button class="btn-gold contact-btn">Send message</button>
+                            <button class="contacts-btn btn-gold">Send message</button>
                         </form>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                     <span>2022</span>
                     <a href="https://github.com/fourlena">github</a>
                 </div>
-                <a href="https://rs.school/js-stage0/" class="footer-rss">Rolling Scopes School</a>
+                <a class="footer-rss" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
                 <ul class="footer-social">
                     <li><a class="footer-social-link" href="#"><img src="assets/svg/social/inst.svg" alt="inst"></a></li>
                     <li><a class="footer-social-link" href="#"><img src="assets/svg/social/fb.svg" alt="fb"></a></li>

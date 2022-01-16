@@ -24,113 +24,8 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 }
-/* Heder */
-.header-container {
-    display: flex;
-    padding-top: 20px;
-    background: url('assets/img/bg/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center 0;
-}
-.logo{
-    cursor: pointer
-}
-.logo:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-      contrast(87%);
-}
-.nav{
-    margin-left: auto;
-}
-.nav-list{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 13px;
-    list-style: none;
-}
-.nav-link {
-    padding: 0 15px;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 50px;
-    color: var(--color-white);
-    text-decoration: none;
-    cursor: pointer;
-}
-.nav-link:hover{
-    color: var(--color-gold);
-}
-.language{
-    display: flex;
-    align-items: center;
-}
-.language-link{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    color: var(--color-white);
-    text-decoration: none;
-    padding-left: 4px;
-    cursor: pointer
-}
-.language-link:hover{
-    color: var(--color-gold); 
-}
-.language span{
-    transform: translateY(1px) rotate(-75deg);
-    display: block;
-    height: 2px;
-    width: 18px;
-    background-color: var(--color-white);
-    margin-left: 4px;
-}
 
-.hero{
-    min-height: 839px;
-    background-image: url('assets/img/bg/header-bg.jpg');
-    background-position: center -68px;
-    background-repeat: no-repeat;
-}
-
-.hero-wrapper{
-    padding-top: 166px;
-    padding-left: 61px;
-    display: flex;
-    flex-direction: column;
-}
-.hero-title{
-    font-family: 'Merriweather', serif;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 64px;
-    color: var(--color-white);
-}
-.hero-text{
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    width: 470px;
-    color: var(--color-white);
-}
-.hero-btn{
-    margin-top: 24px;
-}
-.btn-gold{
-    background: var(--color-gold);
-    border: 0px;
-    height: 55px;
-    width: 220px;
-    cursor: pointer;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-}
-.btn-gold:hover{
-    color: var(--color-white);
-}
-
+/* Title for sections */
 .section-title{ 
     overflow: hidden;
     text-align: center;
@@ -149,12 +44,12 @@ body{
 .section-title::before,
 .section-title::after{
     content: "";
+    position: relative;
     display: inline-block;
-    vertical-align: middle;
     width: 273px;
     height: 4px;
+    vertical-align: middle;
     background-color: var(--color-gold);
-    position: relative;
 }
 .section-title::before{
     margin-left: -100%;
@@ -165,16 +60,148 @@ body{
     right: -14px;
 }
 
+/* Gold button */
+.btn-gold{
+    height: 55px;
+    width: 220px;
+    background: var(--color-gold);
+    border: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-gold:hover{
+    color: var(--color-white);
+}
+
+/* Transparent button */
+.btn-transparent{
+    height: 55px;
+    width: 220px;
+    background: transparent;
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-transparent:hover{
+    color: var(--color-white);
+}
+
+/* Heder */
+.header-container {
+    display: flex;
+    padding-top: 20px;
+    background: url('assets/img/bg/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+.header-logo{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
+.header-menu{
+    margin-left: auto;
+}
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 13px;
+    list-style: none;
+}
+.header-item-link{
+    padding: 0 15px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-item-link:hover{
+    color: var(--color-gold);
+}
+.header-language{
+    display: flex;
+    align-items: center;
+}
+.header-language-link{
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-language-link:hover{
+    color: var(--color-gold); 
+}
+.header-language span{
+    display: block;
+    height: 2px;
+    width: 18px;
+    margin-left: 4px;
+    background-color: var(--color-white);
+    transform: translateY(1px) rotate(-75deg);
+}
+
+/* Hero */
+.hero{
+    min-height: 839px;
+    background-image: url('assets/img/bg/header-bg.jpg');
+    background-position: center -68px;
+    background-repeat: no-repeat;
+}
+.hero-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 166px;
+    padding-left: 61px;
+}
+.hero-title{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 64px;
+    color: var(--color-white);
+}
+.hero-text{
+    width: 470px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--color-white);
+}
+.hero-btn{
+    margin-top: 24px;
+}
+
+/* Skills */
 .skills{
     min-height: 482px;
-    background-color:var(--color-black);
     padding-top: 101px;
+    background-color:var(--color-black);
 }
 .skill-items{
-    padding: 60px 20px 0 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 60px 20px 0 20px;
 }
 .skill-item{
     max-width: 284px;
@@ -200,74 +227,62 @@ body{
     color: var(--color-white);
 }
 
+/* Portfolio */
 .portfolio{
     padding-top: 100px;
 }
-.btn-wrapper{
-    margin-top: 60px;
+.portfolio-buttons{
     display: flex;
     justify-content: center;
     gap: 5px;
+    margin-top: 60px;
 }
-.btn-transparent{
-    background: transparent;
-    border: 2px solid var(--color-gold);
-    color: var(--color-gold);
-    height: 55px;
-    width: 220px;
-    cursor: pointer;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    text-align: center;
-}
-.btn-transparent:hover{
-    color: var(--color-white);
-}
-.picture-wrapper{
-    margin-top: 61px;
+.portfolio-picture{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    margin-top: 61px;
 }
 
+/* Video */
 .video{
     padding-top: 100px;
 }
 .video-wrapper{
-    margin-top: 60px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 .video-btn{
     position: absolute;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.5s;
 }
 .video-btn:hover{
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
 }
 
+/* Price */
 .price{
     padding-top: 100px;
 }
 .price-items{
-    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 .price-item{
-    border: 3px solid var(--color-gold);
     width: 450px;
     height: 505px;
+    border: 3px solid var(--color-gold);
 }
 .price-item span{
-    /* margin-top: 19px; */
     display: block;
     font-weight: normal;
     font-size: 18px;
@@ -296,26 +311,27 @@ body{
     color: var(--color-gold);
 }
 .price-btn{
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
     margin-top: 40px;
 }
 
+/* Contacts */
 .contacts{
-    margin-top: 100px;
     min-height: 700px;
+    margin-top: 100px;
     background: url('assets/img/bg/contacts-bg.jpg');
     background-size: auto 700px;
     background-position: center center;
     background-repeat: no-repeat;
 }
-.contact-wrapper{
-    padding-top: 60px;
+.contacts-wrapper{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding-top: 60px;
 }
-.contact-title{
+.contacts-title{
     padding-right: 224px;
     font-family: 'Merriweather', serif;
     font-style: normal;
@@ -325,51 +341,51 @@ body{
     text-align: center;
     color: var(--color-gold);
 }
-.contact-form{
+.contacts-form{
     width: 450px;
     margin-top: 40px;
 }
-.contact-form input{
+.contacts-form input{
     height: 50px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--color-gold);
     margin-bottom: 20px;
     padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--color-gold);
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder{
-    font-family: inherit;
+.contacts-form input::placeholder,
+.contacts-form textarea::placeholder{
     color: var(--color-gold);
     font-size: 20px;
 }
-.contact-form textarea{
+.contacts-form textarea{
     height: 100px;
     width: 100%;
+    padding: 12px 20px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid var(--color-gold);
     font-family: inherit;
-    color: var(--color-gold);
     font-size: 20px;
+    color: var(--color-gold);
     resize: none;
-    padding: 12px 20px;
 }
-.contact-btn{
+.contacts-btn{
     margin-top: 27px;
 }
 
+/* Footer */
 .footer{
     min-height: 100px;
 }
 .footer-wrapper{
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 .footer-github{
-    gap: 20px;
     display: flex;
+    gap: 20px;
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
@@ -378,6 +394,8 @@ body{
 .footer-github a{
     text-decoration: none;
     color: var(--color-white);
+    cursor: pointer;
+    transition: 0.5s;
 }
 .footer-github a:hover{
     color: var(--color-gold);
@@ -389,6 +407,8 @@ body{
     line-height: 50px;
     text-decoration: none;
     color: var(--color-white);
+    cursor: pointer;
+    transition: 0.5s;
 }
 .footer-rss:hover{
     color: var(--color-gold);
@@ -398,6 +418,10 @@ body{
     align-items: center;
     gap: 20px;
     list-style: none;
+}
+.footer-social-link{
+    cursor: pointer;
+    transition: 0.5s;
 }
 .footer-social-link:hover{
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
