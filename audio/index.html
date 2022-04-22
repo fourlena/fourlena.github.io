@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio player</title>
+</head>
+<body>
+    <div class="player">
+        <div class="imgs">
+            <img class="img" src="assets/img/justice.jpg" alt="justice">
+        </div>
+        <div class="info">
+            <div class="info-wrapper">
+                <div class="info-artist">Justice</div>
+                <div class="info-song">Pleasure X Newjack X Civilization</div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-slider">
+                <input type="range" value="0" min="0" max="" class="progress-bar" oninput="changeProgressBar()">
+            </div>
+            <div class="progress-time">
+                <span class="progress-start">0:00</span>
+                <span class="progress-end"></span>
+            </div>
+        </div>
+        <audio src="assets/audio/justice.mp3"></audio>
+        <div class="buttons">
+            <button class="prev-btn"></button>
+            <button class="play-btn"></button>
+            <button class="next-btn"></button>
+        </div>    
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="https://github.com/fourlena" class="footer-github">
+                    <img src="assets/icons/github.png" alt="github-logo">
+                    <p>My page</p>
+                </a>
+                <p>© 2022</p>
+                <a href="https://rs.school/js-stage0/" class="footer-rss">
+                    <img src="assets/icons/rss.svg" alt="rss-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
